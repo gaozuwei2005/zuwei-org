@@ -1,0 +1,14 @@
+baseURL = "https://gaozuwei2005.github.io/"
+languageCode = "zh-cn"
+title = "Zuwei"
+theme = "PaperMod"
+
+enableInlineShortcodes = true
+enableEmoji = true
+enableRobotsTXT = true
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowToc = true
+  TocOpen = true
