@@ -12,3 +12,23 @@ enableRobotsTXT = true
   ShowReadingTime = true
   ShowToc = true
   TocOpen = true
+  ShowCodeCopyButtons = true
+  math = true
+
+[menu]
+  [[menu.main]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 10
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  [[menu.main]]
+    name = "Writing"
+    url = "/writing/"
+    weight = 30
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 40
