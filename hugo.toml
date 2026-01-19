@@ -13,7 +13,6 @@ enableRobotsTXT = true
   ShowToc = true
   TocOpen = true
   ShowCodeCopyButtons = true
-  math = true
 
 [menu]
   [[menu.main]]
