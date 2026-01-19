@@ -214,6 +214,7 @@ $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 在命中判断的时候，可能会遇到 Cache 和主存内容不一致的情况，需要一定的**写策略**处理。
 $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 **Cache 的命中率**：$H = \displaystyle \frac{N_c}{N_c + N_m}$
+
 **Cache-主存系统平均访问时间**：
 - 设 Cache 和主存同时被访问：$T_a = Ht_{cache} + (1 - H)t_{memory}$
 - 若 Cache miss 后才访问主存：$T_a = t_{cache} + (1 - H) t_{memory}$

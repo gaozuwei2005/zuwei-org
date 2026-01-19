@@ -1,0 +1,9 @@
+/* Display math spacing */
+mjx-container[jax="CHTML"][display="true"] {
+  margin: 1.2em 0 !important;
+}
+
+/* Inline math slightly darker */
+mjx-container[jax="CHTML"] {
+  color: rgba(0, 0, 0, 0.95);
+}

@@ -1,0 +1,29 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Content }}<div class="post-content">{{ . }}</div>{{ end }}
+  </header>
+
+  <div class="post-content timeline">
+    {{ $pages := where site.RegularPages "Type" "in" (slice "posts" "notes" "writing") }}
+    {{ $pages = $pages.ByDate.Reverse }}
+
+    {{ $currentYear := "" }}
+    {{ range $pages }}
+      {{ $y := .Date.Format "2006" }}
+      {{ if ne $y $currentYear }}
+        {{ if ne $currentYear "" }}</ul>{{ end }}
+        <h2>{{ $y }}</h2>
+        <ul>
+        {{ $currentYear = $y }}
+      {{ end }}
+      <li>
+        <span class="tl-date">{{ .Date.Format "01-02" }}</span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+    </ul>
+  </div>
+</article>
+{{ end }}

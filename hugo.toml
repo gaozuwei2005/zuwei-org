@@ -29,9 +29,13 @@ enableRobotsTXT = true
     url = "/writing/"
     weight = 30
   [[menu.main]]
+    name = "Timeline"
+    url = "/timeline/"
+    weight = 40 
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 40
+    weight = 50
 
 [markup.goldmark.renderer]
   unsafe = true

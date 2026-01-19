@@ -1,0 +1,6 @@
+.post-content blockquote {
+  border-left: 4px solid rgba(100,100,100,0.5);
+  background: rgba(128,128,128,0.06);
+  padding: 0.6em 1em;
+  margin: 1.2em 0;
+}

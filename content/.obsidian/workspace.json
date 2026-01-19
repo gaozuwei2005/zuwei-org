@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/computer-organization/review/_index.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/computer-organization/review/_index.md",
+                "file": "_index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/computer-organization/review/_index.md",
+                "file": "_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/computer-organization/review/_index.md",
+                "file": "_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,9 +187,13 @@
   },
   "active": "6cf7ffe5daa3dcf6",
   "lastOpenFiles": [
+    "timeline/_index.md",
+    "notes/computer-organization/review/3-memory/index.md",
+    "timeline",
+    "新建文件夹",
+    "notes/computer-organization/review/_index.md",
     "notes/computer-organization/review/5-cpu/index.md",
     "notes/computer-organization/review/4-instruction-system/index.md",
-    "notes/computer-organization/review/3-memory/index.md",
     "notes/computer-organization/review/2-arithmetic/index.md",
     "notes/computer-organization/review/1-introduction/index.md",
     "notes/computer-organization/lectures/week15_17_io_systems/index.md",
@@ -226,9 +230,6 @@
     "notes/computer-organization/lectures/week10_exceptions_parallelism_and_microprogramming/attachments",
     "notes/computer-organization/lectures/week09_pipelined_processor/attachments",
     "notes/computer-organization/lectures/week08_single_cycle_and_multi_cycle_control/attachments",
-    "notes/computer-organization/lectures/week07_datapath/attachments",
-    "notes/computer-organization/lectures/week06_instrcution_structure_and_arithmetic_operations/attachments",
-    "notes/computer-organization/review/_index.md",
     "notes/computer-organization/_index.md",
     "posts/hello.md",
     "_index.md"

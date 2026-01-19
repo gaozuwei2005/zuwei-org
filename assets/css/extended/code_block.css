@@ -1,0 +1,13 @@
+/* Code block: softer, more academic */
+.post-content pre {
+  background: rgba(128,128,128,0.08);
+  border: 1px solid rgba(128,128,128,0.25);
+  border-radius: 8px;
+}
+
+/* Inline code */
+.post-content code {
+  background: rgba(128,128,128,0.12);
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
