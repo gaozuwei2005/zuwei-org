@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/computer-organization/review/5-cpu/index.md",
+                "file": "notes/computer-organization/review/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5,
-    "collapsed": true
+    "width": 496.5
   },
   "right": {
     "id": "6621fcda440df89c",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/computer-organization/review/5-cpu/index.md",
+                "file": "notes/computer-organization/review/_index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "index 的反向链接列表"
+              "title": "_index 的反向链接列表"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/computer-organization/review/5-cpu/index.md",
+                "file": "notes/computer-organization/review/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "index 的出链列表"
+              "title": "_index 的出链列表"
             }
           },
           {
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/computer-organization/review/5-cpu/index.md",
+                "file": "notes/computer-organization/review/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "_index 的大纲"
             }
           }
         ],
@@ -188,6 +187,7 @@
   },
   "active": "6cf7ffe5daa3dcf6",
   "lastOpenFiles": [
+    "notes/computer-organization/review/5-cpu/index.md",
     "notes/computer-organization/review/4-instruction-system/index.md",
     "notes/computer-organization/review/3-memory/index.md",
     "notes/computer-organization/review/2-arithmetic/index.md",
@@ -206,7 +206,6 @@
     "notes/computer-organization/lectures/week04_arithmetic_and_data_representation/index.md",
     "notes/computer-organization/lectures/week02_performance_and_instruction_system/index.md",
     "notes/computer-organization/lectures/week01_computer_history_and_structure/index.md",
-    "notes/computer-organization/review/5-cpu/index.md",
     "notes/computer-organization/lectures/_index.md",
     "notes/computer-organization/lectures/week01_computer_history_and_structure/attachments/dc03b8a2d82a2867caeeaa03993836a2_720.jpg",
     "notes/computer-organization/lectures/week01_computer_history_and_structure/attachments/b5598efdf4c42fae0c56d3331e504789_720.jpg",

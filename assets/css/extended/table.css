@@ -1,0 +1,36 @@
+/* Table styling for PaperMod */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  padding: 0.6rem 0.8rem;
+  vertical-align: top;
+}
+
+.post-content thead th {
+  font-weight: 600;
+  background: rgba(128, 128, 128, 0.10);
+}
+
+.post-content tbody tr:nth-child(even) {
+  background: rgba(128, 128, 128, 0.06);
+}
+
+/* Make tables scrollable on small screens */
+.post-content table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optional: keep header visible when scrolling (works in many browsers) */
+.post-content thead th {
+  position: sticky;
+  top: 0;
+}
