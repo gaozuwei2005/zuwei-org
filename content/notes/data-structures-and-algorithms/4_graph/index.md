@@ -52,6 +52,6 @@ summary: 易混概念、图的存储、Kosaraju 算法、关键路径
 # 关键路径
 
 最早发生时间：
-$$ve_i = \begin{cases}0, & i 是源点 \\ \displaystyle \max_{j \to i}\{ve_j + w_{ji}\},\ & i 不是源点\end{cases}$$
+$$ve_i = \begin{cases}0, & i 是源点 \\\\ \displaystyle \max_{j \to i}\\{ve_j + w_{ji}\\},\ & i 不是源点\end{cases}$$
 最晚发生时间：
-$$vl_i = \begin{cases}ve_{i}, & i 是汇点 \\ \displaystyle \min_{i \to j}\{vl_j - w_{ji}\},\ & i 不是汇点\end{cases}$$
+$$vl_i = \begin{cases}ve_{i}, & i 是汇点 \\\\ \displaystyle \min_{i \to j}\\{vl_j - w_{ji}\\},\ & i 不是汇点\end{cases}$$
