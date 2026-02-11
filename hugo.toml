@@ -14,6 +14,7 @@ enableRobotsTXT = true
   TocOpen = true
   ShowCodeCopyButtons = true
   disableSpecial1stPost = true
+  mainSections = ["notes", "projects", "writing"]
 
 [menu]
   [[menu.main]]
