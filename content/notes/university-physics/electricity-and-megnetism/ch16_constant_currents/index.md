@@ -1,0 +1,33 @@
+---
+title: 大学物理 | Ch16 恒定电流
+date: 2025-04-11
+summary: 电流、恒定电流、欧姆定律、电动势、焦耳定律
+---
+
+
+## 电流
+- 电流是电荷的定向运动，由载流子的定向运动而产生。传导电流是导体中的电流。
+- 电流强度：单位时间通过横截面的电量：$\displaystyle I = \frac{\Delta q}{\Delta t}$，单位：安(培)，符号 $A = C/s$
+- 电流密度：单位时间通过单位横截面的电量：$\displaystyle \mathrm dI = \boldsymbol J ·\mathrm d\boldsymbol S$，单位：$A/m^2$
+- 总电流各个载流子密度的矢量和，$\displaystyle \mathrm dI = \sum \boldsymbol J_i · \mathrm d\boldsymbol S$
+- 金属中的电流密度：$\boldsymbol J = nev$
+- 电流的连续性方程：$\displaystyle \oint_S \boldsymbol J · \mathrm d \boldsymbol S = - \frac{\mathrm d q_{in}}{\mathrm dt}$
+## 恒定电流
+- 恒定电流：导体各处电流不随时间变化的电流
+- 恒定电流的连续性方程：$\displaystyle \oint_S \boldsymbol J · \mathrm d \boldsymbol S = 0$
+- 基尔霍夫第一方程：$\displaystyle \sum I_i = 0$
+- 恒定电场：恒定电流下产生的电场，电荷分布不随时间改变，因此电场分布也不随时间改变：$\displaystyle \oint_L \boldsymbol E · \mathrm d \boldsymbol r = 0$
+- 基尔霍夫第二定理：恒定电流电路总，沿任何闭合回路的一周的电势降落代数和为零。
+- 恒定电场伴随电荷运动，故有能量转换，静电场是由固定点和产生的，故不需要能量的转换。
+## 欧姆定律
+- 欧姆定律：$U = IR$，其中 $R$ 是导体电阻，符号为 $\Omega$
+- 电阻定律：$\displaystyle R = \rho \frac{l}{S} = \frac{1}{\sigma S}$，其中 $\rho$ 是导体材料的电阻率，符号为 $\Omega · m$，$\sigma$ 是导体材料的电导率，符号为 $S / m$.
+- 将 $U = E \Delta l, I=  J\Delta S, \displaystyle R = \rho \frac{l}{S} = \frac{1}{\sigma S}$ 代入欧姆定律可得欧姆定律的微分形式：$\boldsymbol J = \sigma \boldsymbol E$
+## 电动势
+- 电动势：在电源内将单位正电荷从负极移向正极时非静电力所做的功，$\displaystyle E = \frac{A_{ne}}{q}$
+- 在电源内，非静电力的作用可以视作一个非静电场，所以电动势可以视作电源内的场强。
+- 全电路欧姆定律公式：根据闭合电路电势降落之和为零，可以得到一个回路当中，$\displaystyle \sum (\mp E_i) + \sum (\pm I_iR_i) = 0$
+## 焦耳定律
+- $\displaystyle \boldsymbol J = \frac{ne^2\tau}{m} \boldsymbol E$，其中 $\displaystyle \sigma = \frac{ne^2\tau}{m}$
+- 焦耳定律微分形式：$p = \sigma E^2$
+- 焦耳定律：$P = I^2 R$

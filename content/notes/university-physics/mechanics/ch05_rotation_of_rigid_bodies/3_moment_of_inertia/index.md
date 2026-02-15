@@ -1,0 +1,128 @@
+---
+title: 大学物理 | 5.3 转动惯量的计算
+date: 2024-11-26
+summary: 一般转动惯量计算公式、转动惯量的平行轴定理、常见刚体的转动惯量、计算思路和技巧
+---
+
+## 一般转动惯量计算公式
+
+对于离散质点系：
+
+$$J = \sum_i \Delta m_i \boldsymbol{r}_i^2$$
+
+对于刚体
+
+$$J = \int r^2 \mathrm dm$$
+
+在实际中需要把 $\mathrm dm$ 转换成其他的量，例如
+
+- 线密度；$\mathrm dm = \lambda \mathrm dl$
+- 面密度：$\mathrm dm = \sigma \mathrm dS$
+- 体密度：$\mathrm dm = \rho \mathrm dV$
+- 如果密度不均匀，要把外面的密度放到 $\mathrm d $ 里面。
+
+单位：$kg·m^2$
+
+转动惯量与总质量、质量分布均有关。
+
+**典型例子**：
+
+- 圆盘对圆心的转动惯量：取半径差为 $\mathrm dr$ 的薄圆环，则 $\mathrm dm = \rho 2 \pi r \mathrm dr, J = \int_a^b r^2 \rho 2 \pi r \mathrm dr$
+- 细棒对某一点的转动惯量：取长为 $\mathrm dx$ 的单位元，则 $\mathrm dm = \rho_l \mathrm dx, J = \int_a^b x^2 \rho_l \mathrm dx$
+
+## 转动惯量的平行轴定理
+
+> **平行轴定理**：设 $OC$ 为过质心 $C$ 的转轴，过 $O'$ 有另一转轴与 $OC$ 平行，且相距为 $OO' = d$，那么刚体绕 $O'$ 转动的转动惯量为
+>
+> $$J = J_c + md^2$$
+>
+> **证明**：
+>
+> $$\begin{aligned}
+J &= \int \boldsymbol{r}\_i^2 \mathrm dm \\\\
+&= \int (\boldsymbol{r}\_{ci} + \boldsymbol{d})^2 \mathrm dm \\\\
+&= \int (\boldsymbol{r}\_{ci}^2 + 2\boldsymbol{r}\_{ci}\boldsymbol{d} + \boldsymbol{d}^2) \mathrm dm \\\\
+&= J_c + md^2 + 2 \boldsymbol{d} \int \boldsymbol{r}\_{ci} \mathrm dm \\\\
+\end{aligned}$$
+>
+> 由质心的定义得到 $\int \boldsymbol{r}_{ci} \mathrm dm = 0$，故原定理得证。
+> 
+> **推论**：同一质点系，过质心的转动惯量最小。
+
+## 常见刚体的转动惯量
+
+**需要记忆！！！**
+
+- 细杆绕一端：$J = \frac{1}{3} mL^2$
+- 细杆绕中点：$J = \frac{1}{12} mL^2$
+- 薄圆环（薄圆筒）绕中心轴：$J = mR^2$
+- 圆盘（圆柱体）绕中心轴：$J = \frac{1}{2} mR^2$
+- 薄球壳绕直径：$J = \frac{2}{3} mR^2$
+- 球体绕直径：$J = \frac{2}{5} mR^2$
+
+### 球绕直径
+
+**方法 1：球坐标系 $(r,\theta,\varphi)$**
+
+$$\mathrm dm =\frac{m}{\frac{4}{3} \pi R^3}\ \mathrm dV$$
+
+$$\mathrm dV = \mathrm dr · r\mathrm d\varphi · r\sin \varphi \mathrm d\theta = r^2 \sin \varphi \mathrm d \theta \mathrm d r \mathrm d \varphi$$
+
+求 $\int d^2 \mathrm dm = \frac{2}{5} mR^2$（三重积分）
+
+**方法 2：直角坐标系**
+
+$$\mathrm dm =\frac{m}{\frac{4}{3} \pi R^3}\ \mathrm dV$$
+
+$$\mathrm dV = \pi r^2  \mathrm dz$$
+
+套用薄圆盘的转动惯量公式
+
+$$\mathrm dJ = \frac{1}{2} r^2 \mathrm dm$$
+
+$$J = \int \mathrm dJ = \frac{2}{5} mR^2$$
+
+### 薄球壳绕直径
+
+**方法 1：直角坐标系**
+
+取与转轴垂直的薄圆带。
+
+$$\mathrm dm = \sigma \mathrm dS = \frac{m}{4\pi R^2} \mathrm dS$$
+
+$$\mathrm dS = 2 \pi r \mathrm dl = 2 \pi R \mathrm dz$$
+
+$$r = \sqrt{R^2 - z^2}$$
+
+$$J = \int r^2 \mathrm dm$$
+
+**方法 2：球坐标系**
+
+## 转动惯量的计算思路和技巧
+
+### 降维处理
+
+用与转轴垂直的平面去截物体。计算每个截面的转动惯量再做积分。若每个截面都一样，则可以直接降维。
+
+### 坐标系
+
+直角坐标、极坐标、柱坐标、球坐标。
+
+- 直角坐标系：$\mathrm dS = \mathrm dx \mathrm dy$, $\mathrm dV = \mathrm dx \mathrm dy\mathrm dz$
+- 柱坐标：$\mathrm dV = \mathrm dx·r\mathrm d\varphi·\mathrm dz$
+
+
+### 转轴选取
+
+可以选一个好求的转轴，再使用平行轴定理。
+
+### $\mathrm dm$ 的转换
+
+先将 $\mathrm dm$ 转换为 $\mathrm dl, \mathrm dS, \mathrm dV$，然后再把 $\mathrm dl, \mathrm dS, \mathrm dV$ 用坐标轴微分量表示 $\mathrm dx, \mathrm dy, \mathrm d\theta$ 等等。
+
+### 对于复杂几何体
+
+- 可以把复杂几何体分解成若干个基本几何体，计算过各自质心的转动惯量，然后再使用平行轴定理相加（减） / 积分即可。
+
+### 滑轮的一般假设
+

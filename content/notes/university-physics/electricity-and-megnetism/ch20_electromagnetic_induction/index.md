@@ -1,0 +1,15 @@
+---
+title: 大学物理 | Ch20 电磁感应
+date: 2025-05-14
+summary: 感应电动势
+---
+
+## 感应电动势
+- 感应电流：穿过闭合导体回路的磁通量发生变化时的电流。
+- 感应电动势：穿过闭合导体回路的磁通量发生变化时的电动势。
+- **法拉第电磁感应定律**：感应电动势的大小与通过导体回路的磁通量变化率成正比： $\displaystyle \mathscr E = - \frac{\mathrm d\Phi}{\mathrm dt}$，其中规定当 $\Phi$ 与回路电流成右手螺旋关系时为正，否则为负。
+- 楞次定律：感应电动势产生的感应电流产生的磁场总是会阻碍感应电动势磁通量的变化。
+- 全磁通：穿过多匝线圈的磁通量总和，若多匝线圈相同，则有 $\displaystyle \mathscr E = - \frac{\mathrm d\Psi}{\mathrm dt} = - N \frac{\mathrm d\Phi}{\mathrm dt}$.
+- 动生电动势：$\displaystyle |\mathscr E| = \frac{\mathrm d}{\mathrm dt} (Blx) = Blv$，一般地若整个导体回路都在磁场中运动，那么总的动生电动势为 $\displaystyle \mathscr E = \oint_L (\boldsymbol v \times \boldsymbol B)·\mathrm d\boldsymbol l$.
+- 电路中感应电动势的电能是由外力做功所消耗的机械能转换而来的。
+- 
