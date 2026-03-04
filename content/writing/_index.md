@@ -1,6 +1,4 @@
 ---
 title: Writing
-description: 随笔与长评
+description: 写作
 ---
-
-该栏目主要存放我的文艺长评与个人随笔。

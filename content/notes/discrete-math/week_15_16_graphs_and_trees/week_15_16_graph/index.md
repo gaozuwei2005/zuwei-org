@@ -28,7 +28,7 @@ toc: true
 **子图**：
 - 子图：$G'(V', E')$ 满足 $V' \subseteq V,\ E' \subseteq E$
 - 生成子图：$G'(V', E')$ 满足 $V'=V,\ E' \subseteq E$
-- 导出子图：$G'(V', E')$ 满足 $V' \subseteq V$，且 $E' = \{e\mid e = (u,v) \land u, v \in V' \land e \in E\}$.
+- 导出子图：$G'(V', E')$ 满足 $V' \subseteq V$，且 $E' = \\\{e\mid e = (u,v) \land u, v \in V' \land e \in E\\\}$.
 
 **图的操作**：
 - 删点则要删除顶点相连的边，删边则不删除顶点。
@@ -135,8 +135,8 @@ toc: true
 # 图的存储和表示
 
 **关联矩阵**：$M = [m_{ij}] \in \mathbb R^{n \times m}$ ，满足
-- 对于无向图，$\displaystyle m_{ij} = \begin{cases}1,& v_i 是 e_j 的端点 \\ 0,& \text{otherwise}\end{cases}$
-- 对于有向图，$m_{ij} = \begin{cases} 1, & v_i 是 e_j 的起点 \\ -1, & v_i 是 e_j 的终点 \\0, & \text{otherwise}\end{cases}$
+- 对于无向图，$\displaystyle m_{ij} = \begin{cases}1,& v_i 是 e_j 的端点 \\\\ 0,& \text{otherwise}\end{cases}$
+- 对于有向图，$m_{ij} = \begin{cases} 1, & v_i 是 e_j 的起点 \\\\ -1, & v_i 是 e_j 的终点 \\\\0, & \text{otherwise}\end{cases}$
 
 **邻接矩阵**：$A = [a_{ij}] \in \mathbb R^{n \times n}$，满足 $a_{ij}$ 为边 $(v_i, v_j)$ 的数量。无向图的邻接矩阵是关于对角线对称的。
 

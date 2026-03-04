@@ -198,7 +198,7 @@ $$\mu(n)=
 - 莫比乌斯反演：$\mu*1=\epsilon$，即 $[n=1]=\sum\limits_{d|n}\mu(d)$
 - $\mu*id=\varphi$
 - 若 $f(n)=\sum\limits_{d|n}g(d)$，则 $g(n)=\sum\limits_{d|n}\mu(d)·f(n/d)$
-	- 证明：$f=g*1\Leftrightarrow f*\mu=g*1*\mu\Leftrightarrow g=f*\mu$
+	- 证明：$f=g\*1\Leftrightarrow f\*\mu=g\*1\*\mu\Leftrightarrow g=f\*\mu$
    - 理解：本质是一种容斥，对 $n$ 的约数按照互不相同质数的多少进行容斥。
    
 #### 乘积形式 / 前缀和形式

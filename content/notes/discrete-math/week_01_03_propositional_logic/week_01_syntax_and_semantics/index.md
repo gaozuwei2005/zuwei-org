@@ -58,7 +58,7 @@ date: 2025-09-07
 
 $$
 \begin{aligned}
-\sigma(B \to C) &= \lnot (\sigma (B) \land \lnot \sigma (C)) \\
+\sigma(B \to C) &= \lnot (\sigma (B) \land \lnot \sigma (C)) \\\\
 \sigma(B \leftrightarrow C) &= \sigma(B) \land \sigma(C) \lor \lnot \sigma(B) \land \lnot \sigma(C) \\
 \end{aligned}
 $$

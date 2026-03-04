@@ -11,15 +11,15 @@ toc: true
 **函数**：记为 $f: A \to B \subseteq A \times B$，且满足 $\forall a \in A,\ \exists! b \in B,\ \langle a, b \rangle \in f$
 - 对于每个对应关系 $\langle a, b \rangle$，记作 $b = f(a)$，称 $b$ 是 $a$ 的 *像*，$a$ 是 $b$ 的 *原像*。
 - $A$ 是 $f$ 的 *定义域 / 域*，$B$ 是 $f$ 的 *陪域*。
-- *像集*：$f(S) = \{f(x) \in B \mid  x\in S\}$，其中 $S \subseteq A$.
-- *原像集*：$f^{-1}(T) = \{ x \in A \mid f(x) \in T \}$，其中 $T \subseteq B$.
+- *像集*：$f(S) = \\\{f(x) \in B \mid  x\in S\\\}$，其中 $S \subseteq A$.
+- *原像集*：$f^{-1}(T) = \\\{ x \in A \mid f(x) \in T \\\}$，其中 $T \subseteq B$.
 - *值域*：$f(A),\ ran(f)$.
 
 **定义方法**：性质概括法、元素枚举法。
 
 **恒等函数**：$id_A = \Delta_A$.
 
-**特征函数**：$\chi_S(a) = \begin{cases} 1,&a \in S\\0,&a \notin S\end{cases}$
+**特征函数**：$\chi_S(a) = \begin{cases} 1,&a \in S\\\\0,&a \notin S\end{cases}$
 
 **单函数 / 一对一函数**：$\forall x, y \in A,\ x \ne y \Rightarrow f(x) \ne f(y)$.
 
@@ -37,7 +37,7 @@ toc: true
 - 结合律：$h \circ (g \circ f) = (h \circ g) \circ f$.
 - 函数复合保持函数单满性质：如 $f, g$ 都是单/满/双函数，那么 $g \circ f$ 也是单/满/双函数。
 
-**双函数的逆函数 / 反函数**：对于双函数 $f: A \to B$，其逆函数为 $g: B \to A = \{ \langle y, x \rangle \mid \langle x, y\rangle \in f\}$.
+**双函数的逆函数 / 反函数**：对于双函数 $f: A \to B$，其逆函数为 $g: B \to A = \\\{ \langle y, x \rangle \mid \langle x, y\rangle \in f\\\}$.
 - 二者关系：$g \circ f = id_A,\ f \circ g = id_B$.
 - 函数是双函数 $\Leftrightarrow$ 函数存在逆函数。
 
@@ -69,7 +69,7 @@ toc: true
 - 例子：$\mathbb N$, $\mathbb Z,\ \mathbb N*$, $\mathbb Z^+\times \mathbb Z^+$, $\mathbb N^+\times \mathbb N^+$.
 
 **不可数集**：比自然数势更大的集合。
-- 例子：$\mathbb R,\ \mathbb N^{\mathbb N} = \{f : \mathbb N \to \mathbb N\}$
+- 例子：$\mathbb R,\ \mathbb N^{\mathbb N} = \\\{f : \mathbb N \to \mathbb N\\\}$
 
 # 算法复杂度
 
@@ -82,7 +82,7 @@ toc: true
 3. 对数函数：$(log_b n)^c\ (b > 1,\ c > 0)$.
 
 **大 O 记号的运算**：
-- $\max(f_1, f_2) \in O(max(g_1,g_2))$.
+- $\max(f_1, f_2) \in O(\max(g_1,g_2))$.
 - $f_1 + f_2 \in O(g_1+g_2)$.
 - $f_1·f_2 \in O(g_1·g_2)$.
 

@@ -34,4 +34,4 @@ toc: true
 
 # 主定理
 
-分治算法的时间复杂度通常可用递推关系式 $f(n) = af(n / b) + O(n^d)$ 来表示，其中 $a \ge 1, \ b > 1, d \ge 0$，那么 $$f(n) = af(n / b) + O(n^d) = \begin{cases}O(n^d),& a < b^d \\ O(n^d \log n),& a = b^d \\ O(n^{\log_b a}), & a > b^d\end{cases}$$
+分治算法的时间复杂度通常可用递推关系式 $f(n) = af(n / b) + O(n^d)$ 来表示，其中 $a \ge 1, \ b > 1, d \ge 0$，那么 $$f(n) = af(n / b) + O(n^d) = \begin{cases}O(n^d),& a < b^d \\\\ O(n^d \log n),& a = b^d \\\\ O(n^{\log_b a}), & a > b^d\end{cases}$$

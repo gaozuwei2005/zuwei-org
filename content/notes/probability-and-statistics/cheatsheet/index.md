@@ -29,10 +29,10 @@ $$f_Y(y)=\sum_{x:\,g(x)=y}f_X\big(x(y)\big)\,\left|\frac{dx(y)}{dy}\right|=\sum_
 
 |              分布               |                                            分布律                                            |            期望            |              方差               |
 | :---------------------------: | :---------------------------------------------------------------------------------------: | :----------------------: | :---------------------------: |
-|  0-1 分布<br>$X \sim b(1, p)$   |      $$\displaystyle P\{X = i\} = \begin{cases}p,& i = 1\\\\1-p, & i=0\end{cases}$$       |       $$E(X) = p$$       |       $$D(X) = p(1-p)$$       |
-|   二项分布<br>$X \sim b(n, p)$    | $$\displaystyle P\{X = k\} = \binom{n}{k} p^k (1 - p)^{n - k},\quad k = 0, 1, \cdots, n$$ |      $$E(X) = np$$       |      $$D(X) = np(1-p)$$       |
-| 泊松分布<br>$X \sim \pi(\lambda)$ |       $$P\{X = k\} = e^{-\lambda} \frac{\lambda^k}{k!},\quad k = 0 , 1, 2,\cdots$$        |    $$E(X) = \lambda$$    |      $$D(X) = \lambda$$       |
-|             几何分布              |                 $$P\{X = k\} = (1 - p)^{k - 1} p,\quad k = 1, 2, \cdots$$                 |  $$E(X) = \frac{1}{p}$$  | $$D(X) = \frac{1 - p}{p^2}$$  |
+|  0-1 分布<br>$X \sim b(1, p)$   |      $$\displaystyle P\\\{X = i\\\} = \begin{cases}p,& i = 1\\\\1-p, & i=0\end{cases}$$       |       $$E(X) = p$$       |       $$D(X) = p(1-p)$$       |
+|   二项分布<br>$X \sim b(n, p)$    | $$\displaystyle P\\\{X = k\\\} = \binom{n}{k} p^k (1 - p)^{n - k},\quad k = 0, 1, \cdots, n$$ |      $$E(X) = np$$       |      $$D(X) = np(1-p)$$       |
+| 泊松分布<br>$X \sim \pi(\lambda)$ |       $$P\\\{X = k\\\} = e^{-\lambda} \frac{\lambda^k}{k!},\quad k = 0 , 1, 2,\cdots$$        |    $$E(X) = \lambda$$    |      $$D(X) = \lambda$$       |
+|             几何分布              |                 $$P\\\{X = k\\\} = (1 - p)^{k - 1} p,\quad k = 1, 2, \cdots$$                 |  $$E(X) = \frac{1}{p}$$  | $$D(X) = \frac{1 - p}{p^2}$$  |
 |    均匀分布<br>$X \sim U(a,b)$    |     $$f(x) = \begin{cases}\dfrac{1}{b -a},& a < x < b \\\\ 0,& otherwise\end{cases}$$     | $$E(X) = \frac{a+b}{2}$$ | $$D(X) = \frac{(b-a)^2}{12}$$ |
 |             指数分布              | $$f(x) = \begin{cases}\dfrac{e^{-x/\theta}}{\theta},& x > 0 \\\\ 0,& x \le 0\end{cases}$$ |    $$E(X) = \theta$$     |      $$D(X) = \theta^2$$      |
 | 正态分布<br>$X = N(\mu,\sigma^2)$ |        $$f(x) = \frac{1}{\sqrt{2\pi}\sigma} e^{ -\frac{(x - \mu)^2}{2\sigma^2} }$$        |      $$E(X) = \mu$$      |      $$D(X) = \sigma^2$$      |

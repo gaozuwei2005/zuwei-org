@@ -41,6 +41,7 @@ summary: 柱面、锥面、旋转曲面的方程
 **圆锥面的方程**：给定顶点 $\boldsymbol A(x_0, y_0, z_0)$、轴线法向量 $\boldsymbol n$，以及母线与轴线的夹角（半顶角）为 $\alpha$，那么圆锥面方程为 $$\cos \alpha = \pm \frac{\overrightarrow{AM} ·\boldsymbol n}{|\overrightarrow{AM}|·|\boldsymbol n|}$$
 **锥面的充分判定**：一个关于 $x, y, z$ 的齐次方程总是表示顶点在 $(0, 0, 0)$ 的锥面。
 - 原因：若 $k$ 次齐次方程 $F(x, y, z) = 0$，则 $F(tx, ty, tz) = t^k F(x, y, z) = 0$.
+
 **锥面的充分判定 2**：一个关于 $x - x_0, y - y_0, z - z_0$ 的齐次方程总是表示顶点在 $(x_0, y_0, z_0)$ 的锥面。
 
 # 4.3 旋转曲面

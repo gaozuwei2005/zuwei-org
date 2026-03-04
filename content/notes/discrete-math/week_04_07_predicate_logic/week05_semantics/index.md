@@ -12,9 +12,9 @@ date: 2025-10-11
 
 **一阶逻辑公式的解释 / 模型**：设非逻辑符号集是 $\mathcal L$，一阶逻辑公式的解释 $\mathcal M = \langle D, \text{Interpretation} \rangle$ 包括：
 - **论域**：非空集合 $D$，表示个体变量的所有可能取值范围。
-- 对于每个个体常量 $c \in \mathcal L$，$\exists \textlbrackdbl c \textrbrackdbl \in D$ 与 $c$ 对应
-- 对于每个 $n$ 元函数 $f \in \mathcal L$，$\exists \textlbrackdbl f\textrbrackdbl \in D$ 与 $f$ 对应，其中 $\textlbrackdbl f\textrbrackdbl$ 是 $n$ 元函数 $D^n \to D$
-- 对于每个 $n$ 元谓词 $F \in \mathcal L$，$\exists \textlbrackdbl F \textrbrackdbl \in D$ 与 $F$ 对应，其中 $\textlbrackdbl F\textrbrackdbl$ 是 $n$ 元关系 $\textlbrackdbl F\textrbrackdbl \subseteq D^n$（使得 $\textlbrackdbl F\textrbrackdbl$ 为真的所有 $n$ 元 *有序组*）
+- 对于每个个体常量 $c \in \mathcal L$，$\exists [c] \in D$ 与 $c$ 对应
+- 对于每个 $n$ 元函数 $f \in \mathcal L$，$\exists [f] \in D$ 与 $f$ 对应，其中 $[f]$ 是 $n$ 元函数 $D^n \to D$
+- 对于每个 $n$ 元谓词 $F \in \mathcal L$，$\exists [F] \in D$ 与 $F$ 对应，其中 $[F]$ 是 $n$ 元关系 $[ F] \subseteq D^n$（使得 $[ F]$ 为真的所有 $n$ 元 *有序组*）
 
 **个体变量指派函数** $\sigma: V \to D$，表示将个体变量 $x \in V$ 指派为 $\sigma(x) \in D$
 
@@ -24,17 +24,17 @@ date: 2025-10-11
 # 3.3.2 一阶逻辑公式的真值
 
 **一阶逻辑公式的真值计算**：
-- 项的语义是论域的元素：$t \to \textlbrackdbl t \textrbrackdbl_\sigma \in D$
-- 归纳基：原子公式 $F(t_1, t_2, \cdots t_n)$ 的真值为真，当且仅当 $\langle \textlbrackdbl t_1 \textrbrackdbl_\sigma, \cdots, \textlbrackdbl t_n \textrbrackdbl_\sigma \rangle \in \textlbrackdbl F \textrbrackdbl$
+- 项的语义是论域的元素：$t \to [ t ]_\sigma \in D$
+- 归纳基：原子公式 $F(t_1, t_2, \cdots t_n)$ 的真值为真，当且仅当 $\langle [t_1]\_{\sigma}, \cdots, [t_n]\_{\sigma} \rangle \in [ F ]$
 - 归纳步 I：逻辑运算符的真值计算方式与命题逻辑相同
 - 归纳步 II：
 	- 个体变量指派函数的**变换** $\sigma[x \mapsto d]$ 表示将变量 $x$ 指派为 $d$，其他变量不变。
-	- $\sigma(\forall x A) = 1$ 当且仅当 $\forall d \in D,\ \sigma[x \mapsto d](A) = 1$
-	- $\sigma(\exists x A) = 1$ 当且仅当 $\exists d \in D,\ \sigma[x \mapsto d](A) = 1$
+	- $\sigma(\forall x A) = 1$ 当且仅当 $\forall d \in D,\ \sigma [x \mapsto d] (A) = 1$
+	- $\sigma(\exists x A) = 1$ 当且仅当 $\exists d \in D,\ \sigma [x \mapsto d] (A) = 1$
 
-**量词公式在有限论域的展开**：若 $D = \{a_1, a_2, \cdots, a_n\}$，则
-- $\displaystyle \sigma(\forall x A(x)) \equiv \bigwedge_{i = 1}^n \sigma[x \mapsto a_i](A)$
-- $\displaystyle \sigma(\exists x A(x)) \equiv \bigvee_{i = 1}^n \sigma[x \mapsto a_i](A)$
+**量词公式在有限论域的展开**：若 $D = \\\{a_1, a_2, \cdots, a_n\\\}$，则
+- $\displaystyle \sigma(\forall x A(x)) \equiv \bigwedge_{i = 1}^n \sigma [x \mapsto a_i] (A)$
+- $\displaystyle \sigma(\exists x A(x)) \equiv \bigvee_{i = 1}^n \sigma [x \mapsto a_i] (A)$
 
 **对于个体变量指派函数的说明**：
 - 公式的真值和个体变量指派函数的具体指派无关，只是说具体指派是计算它的真值的方式。

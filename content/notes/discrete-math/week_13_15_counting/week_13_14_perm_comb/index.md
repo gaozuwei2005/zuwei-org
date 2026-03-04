@@ -30,27 +30,13 @@ $|T| = |S|/k$。
 对于有限集合 $A_1, A_2, \dots, A_n$，其并集的大小可由容斥原理给出：
 
 **一般形式：**
-$$
-\left|\bigcup_{i=1}^n A_i\right|
-= \sum_{1 \le i \le n} |A_i|
-- \sum_{1 \le i < j \le n} |A_i \cap A_j|
-+ \sum_{1 \le i < j < k \le n} |A_i \cap A_j \cap A_k|
-- \cdots
-+ (-1)^{n-1} \left|A_1 \cap A_2 \cap \cdots \cap A_n\right|.
-$$
+$$\left|\bigcup_{i=1}^n A_i\right|= \sum_{1 \le i \le n} |A_i|- \sum_{1 \le i < j \le n} |A_i \cap A_j|+ \sum_{1 \le i < j < k \le n} |A_i \cap A_j \cap A_k|- \cdots+ (-1)^{n-1} \left|A_1 \cap A_2 \cap \cdots \cap A_n\right|.$$
 
 **三集合情形：**
-$$
-|A \cup B \cup C|
-= |A| + |B| + |C|
-- |A \cap B| - |B \cap C| - |A \cap C|
-+ |A \cap B \cap C|.
-$$
+$$|A \cup B \cup C|= |A| + |B| + |C|- |A \cap B| - |B \cap C| - |A \cap C|+ |A \cap B \cap C|.$$
 
 **两集合情形：**
-$$
-|A \cup B| = |A| + |B| - |A \cap B|.
-$$
+$$|A \cup B| = |A| + |B| - |A \cap B|.$$
 
 # 鸽笼原理
 

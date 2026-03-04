@@ -8,7 +8,7 @@ toc: true
 
 # 关系的定义和表示
 
-**笛卡尔积**：两集合中所有元素构成的有序对的集合 $A \times B = \{\langle a, b \rangle \mid a \in A \land b \in B\}$。
+**笛卡尔积**：两集合中所有元素构成的有序对的集合 $A \times B = \\\{\langle a, b \rangle \mid a \in A \land b \in B\\\}$。
 
 - 笛卡尔积不满足交换律，也不满足结合律。
 - 若 $|A| = n, |B| = m$ 则 $|A \times B| = nm$.
@@ -29,13 +29,13 @@ toc: true
 **特殊关系**：
 - 空关系：$\emptyset \subseteq A \times B$.
 - 全关系：$A \times B \subseteq A \times B$
-- 恒等关系 / 对角关系：$\Delta = \{\langle a, a \rangle \mid a \in A\} \subseteq A \times A$
+- 恒等关系 / 对角关系：$\Delta = \\\{\langle a, a \rangle \mid a \in A\\\} \subseteq A \times A$
 
 # 关系的运算
 
 **类似于集合**：集合并、集合交、集合差、集合补
 
-**逆关系**：对于二元关系 $R \subseteq A \times B$，定义逆关系 $R^{-1} = \{\langle b,a\rangle\mid\langle a,b \rangle\in R\} \subseteq B \times A$
+**逆关系**：对于二元关系 $R \subseteq A \times B$，定义逆关系 $R^{-1} = \\\{\langle b,a\rangle\mid\langle a,b \rangle\in R\\\} \subseteq B \times A$
 
 逆关系的基本性质：
 - $(R^{-1})^{-1} = R$
@@ -43,10 +43,10 @@ toc: true
 - 对并、交运算的分配：$(R \cup S)^{-1} = R^{-1} \cup S^{-1}$，$(R \cap S)^{-1} = R^{-1} \cap S^{-1}$
 
 
-**关系复合**：对于二元关系 $R \subseteq A \times B$ 和 $S \subseteq B \times C$，定义关系复合 $S\circ R = \{\langle a, c \rangle \mid \exists b \in B (\langle a,b \rangle \in R \land \langle b,c \rangle \in S)\}$
+**关系复合**：对于二元关系 $R \subseteq A \times B$ 和 $S \subseteq B \times C$，定义关系复合 $S\circ R = \\\{\langle a, c \rangle \mid \exists b \in B (\langle a,b \rangle \in R \land \langle b,c \rangle \in S)\\\}$
 - 注意前面是 $S$，后面是 $R$，通常称为**逆序复合**，先写外层再写内层。
 - 理解：关系的传递。
-- 关系复合可以用关系矩阵的**逻辑积** $R \odot S$ 表示，其中 $$(R \odot S)_{ij} = \bigvee_k (r_{ik} \land s_{kj})$$
+- 关系复合可以用关系矩阵的**逻辑积** $R \odot S$ 表示，其中 $$(R \odot S)\_{ij} = \bigvee\_k (r_{ik} \land s_{kj})$$
 关系复合的性质：
 - 结合律：$T \circ (S \circ R) = (T \circ S) \circ R$
 - 单位元：$\Delta \circ R = R \circ \Delta = R$

@@ -5,8 +5,8 @@ summary: 数量积、向量积、混合积、双重向量积
 ---
 
 
-# 1.7 两向量的数量积 (con'd)
-向量的模表达式：对于 $\boldsymbol a \{X, Y, Z\}$，则 $|\boldsymbol a| = \sqrt{X^2 + Y^2 + Z^2}$
+# 1.7 两向量的数量积 (cont'd)
+向量的模表达式：对于 $\boldsymbol a \\\{X, Y, Z\\\}$，则 $|\boldsymbol a| = \sqrt{X^2 + Y^2 + Z^2}$
 
 空间两点距离公式：对于 $P_1(x_1, y_1, z_1), P_2(x_2, y_2, z_2)$，则 $\left|\overrightarrow {P_1P_2} \right| = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2}$
 
@@ -21,14 +21,14 @@ summary: 数量积、向量积、混合积、双重向量积
 - $\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1$
 - $\boldsymbol a$ 在 $\boldsymbol b$ 上的投影为 $\displaystyle \frac{\boldsymbol a · \boldsymbol b}{|\boldsymbol b|}$
 
-**夹角余弦**：$\boldsymbol a \{X_1, Y_1, Z_1\}, \boldsymbol b \{X_2, Y_2, Z_2\}$ 的夹角余弦为 $$\cos \theta = \frac{X_1 X_2 + Y_1 Y_2 + Z_1 Z_2}{\sqrt{X_1^2 + Y_1^2 + Z_1^2} \sqrt{X_2^2 + Y_2^2 + Z_2^2}}$$
+**夹角余弦**：$\boldsymbol a \\\{X_1, Y_1, Z_1\\\}, \boldsymbol b \\\{X_2, Y_2, Z_2\\\}$ 的夹角余弦为 $$\cos \theta = \frac{X_1 X_2 + Y_1 Y_2 + Z_1 Z_2}{\sqrt{X_1^2 + Y_1^2 + Z_1^2} \sqrt{X_2^2 + Y_2^2 + Z_2^2}}$$
 - 两向量相互垂直充要条件为 $X_1 X_2 + Y_1 Y_2 + Z_1 Z_2 = 0$
 - 柯西不等式：$\displaystyle \left(\sum_{i = 1}^n a_i b_i\right)^2 \le \sum_{i = 1}^n a_i^2 \sum_{i = 1}^n b_i^2$
 
 # 1.8 两向量的向量积
 向量积的物理意义：
 ![](attachments/Pasted-image-20250923104019.png)
-**向量积 / 外积**：$\boldsymbol a \times \boldsymbol b$ 是一个向量，满足 $|\boldsymbol a \times \boldsymbol b| = |\boldsymbol a| |\boldsymbol b| \sin \angle (\boldsymbol a, \boldsymbol b)$，方向与 $\boldsymbol a, \boldsymbol b$ 都垂直，且形成右手标架 $\{ O: \boldsymbol a, \boldsymbol b, \boldsymbol a \times \boldsymbol b\}$
+**向量积 / 外积**：$\boldsymbol a \times \boldsymbol b$ 是一个向量，满足 $|\boldsymbol a \times \boldsymbol b| = |\boldsymbol a| |\boldsymbol b| \sin \angle (\boldsymbol a, \boldsymbol b)$，方向与 $\boldsymbol a, \boldsymbol b$ 都垂直，且形成右手标架 $\\\{ O: \boldsymbol a, \boldsymbol b, \boldsymbol a \times \boldsymbol b\\\}$
 
 ![](attachments/Pasted-image-20250923104510.png)
 $|\boldsymbol a \times \boldsymbol b|$ 是两个向量为邻边构成的平行四边形的面积。

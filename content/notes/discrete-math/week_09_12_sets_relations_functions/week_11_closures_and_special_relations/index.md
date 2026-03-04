@@ -61,8 +61,8 @@ for k = [1, n]
 
 描述了无向图的连通性。
 
-**等价类**：对于非空集合 $A$ 上的 *等价关系* $R$，记 $a$ 所在的 $R$ 等价类为 $$[a]_R = \{b \in A \mid \langle a, b\rangle \in R\}$$
-**商集**：$R$ 中所有等价类构成的集合为 $$A / R = \{[a]_R \mid a \in A\}$$
+**等价类**：对于非空集合 $A$ 上的 *等价关系* $R$，记 $a$ 所在的 $R$ 等价类为 $$[a]_R = \\\\\{b \in A \mid \langle a, b\rangle \in R\\\\\}$$
+**商集**：$R$ 中所有等价类构成的集合为 $$A / R = \\\\\{[a]_R \mid a \in A\\\\\}$$
 **等价类的基本性质**：
 - 等价类非空：$\forall a \in A,\ [a]_R \neq \emptyset$
 - 等价类要么相等要么不交：$[a]_R = [b]_R \Leftrightarrow \langle a, b \rangle \in R \qquad [a]_R \cap [b]_R = \emptyset \Leftrightarrow \langle a, b \rangle \notin R$

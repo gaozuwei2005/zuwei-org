@@ -431,19 +431,19 @@ $$
 普通生成函数~~就是非常普通的生成函数~~，其形式为 $F(x)=\sum f_i·x^i$，其对应的序列为 $\langle f_0,f_1,f_2,\dots\rangle$。
 
 - 加法：$F(x)\pm G(x)=\sum (f_i+g_i)x^i$，即序列 $\langle f_0+g_0,f_1+g_1,f_2+g_2,\dots\rangle$ 的生成函数是 $F+G$。其组合意义为 **集合并**。
-- 乘法：$F(x)*G(x)=\sum\limits_{n} x^n\sum\limits_{i=0}^n f_i·g_{n-i}$，即两个序列的卷积 $\left\langle\sum_{i+j=n}f_i·g_j\right\rangle$ 的普通生成函数为 $F*G$。其组合意义为 **笛卡尔积**。
+- 乘法：$F(x)\*G(x)=\sum\limits\_{n} x^n\sum\limits\_{i=0}^n f\_i·g\_{n-i}$，即两个序列的卷积 $\left\langle\sum\_{i+j=n}f_i·g_j\right\rangle$ 的普通生成函数为 $F\*G$。其组合意义为 **笛卡尔积**。
 
 常用封闭形式：
 
-$\begin{aligned}
+$$\begin{aligned}
 (1) && \sum x^i &= \dfrac{1}{1-x} &\rightarrow& \langle 1,1,1,\dots \rangle \\\\
 (2) && \sum a^ix^i &= \dfrac{1}{1-ax} &\rightarrow& \langle 1,a,a^2,\dots\rangle\\\\
-(3) && \sum x^{ik} &= \dfrac{1}{1-x^k} &\rightarrow& \langle 1,\underbrace{0,0\dots,0}_{k-1},1,\underbrace{0,0\dots,0}_{k-1},1\dots \rangle\\\\
+(3) && \sum x^{ik} &= \dfrac{1}{1-x^k} &\rightarrow& \langle 1,\underbrace{0,0\dots,0}\_{k-1},1, \underbrace{0,0\dots,0}\_{k-1},1\dots \rangle\\\\
 (4) && \sum \dfrac{x^i}{i} &= -\ln(1-x) &\rightarrow& \left\langle 1,\dfrac{1}{2},\dfrac{1}{3},\dfrac{1}{4},\dots \right\rangle\\\\
 (5) && \sum \dfrac{x^i}{i!} &= e^x &\rightarrow &\left\langle1,\dfrac{1}{2!},\dfrac{1}{3!},\dfrac{1}{4!},\dots \right\rangle\\\\
 (6) && \sum \binom{n}{i}x^i &= (x+1)^n &\rightarrow& \left\langle \binom{n}{0},\binom{n}{1},\binom{n}{2},\dots,\binom{n}{n} \right\rangle\\\\
 (7) && \sum \binom{n+i-1}{n-1}x^i &= \left(\dfrac{1}{1-x}\right)^n &\rightarrow& \left\langle \binom{n-1}{n-1},\binom{n+1-1}{n-1},\binom{n+2-1}{n-1},\dots \right\rangle\\\\
-\end{aligned}$
+\end{aligned}$$
 
 证明 / 理解：
 
@@ -549,9 +549,9 @@ $$\prod_i\prod_{j=1}^{f_i}\sum_{c=0}^{+\infty}x^{i·c}=\prod_{i}\dfrac{1}{(1-x^i
 我们先上 $\ln$ 再 $\exp$ 可以干掉乘积式
 
 $$\begin{aligned}
-&\exp \sum_{i} -f_i \ln(1-x^i)&
+&\exp \sum_{i} -f_i \ln(1-x^i)\\\\
 =&\exp \sum_{i} f_i \sum_{j=1}^{+\infty} \dfrac{x^{ij}}{j}\\\\
-=&\exp \sum_{j=1}^{+\infty} \dfrac{1}{j} \sum_if_i x^{ij}&
+=&\exp \sum_{j=1}^{+\infty} \dfrac{1}{j} \sum_if_i x^{ij}\\\\
 =&\exp \sum_{j=1}^{+\infty} \dfrac{F(x^j)}{j}\\\\
 \end{aligned}$$
 
@@ -1001,17 +1001,17 @@ $$f_{n,s}=f_{n,s-n}+f_{n-1,s-1}$$
 
 我们仍然构造 $f_n-pf_{n-1}=q(f_{n-1}-pf_{n-2})$，因此有 $f_n=(p+q)f_{n-1}-pqf_{n-2}$。
 
-因此我们需要找到 $p,q$ 使得 $\left\{\begin{aligned}p+q&=a\\\\pq&=-b\end{aligned}\right.$，根据韦达定理，$p,q$ 就是 $x^2-ax-b=0$ 的两根。
+因此我们需要找到 $p,q$ 使得 $\begin{cases}p+q=a\\\\pq=-b\end{cases}$，根据韦达定理，$p,q$ 就是 $x^2-ax-b=0$ 的两根。
 
 我们解出来 $p,q$ 后，就有 $\langle f_n-pf_{n-1}\rangle$ 是公比为 $q$ 的等比数列。同时由于在这里 $p,q$ 是对称的，因此我们重复上面的步骤可以推出 $\langle f_n-qf_{n-1}\rangle$ 是公比为 $p$ 的等比数列。
 
-于是我们有 $\left\{\begin{aligned}f_n-pf_{n-1}&=(f_1-pf_0)q^{n-1}&(1)\\\\f_{n}-qf_{n-1}&=(f_1-qf_0)p^{n-1}&(2)\end{aligned}\right.$
+于是我们有 $\begin{cases}f_n-pf_{n-1}&=(f_1-pf_0)q^{n-1}&(1)\\\\f_{n}-qf_{n-1}&=(f_1-qf_0)p^{n-1}&(2)\end{cases}$
 
 我们令 $(1)-(2)$ 得到 $f_{n}=\dfrac{f_1-qf_0}{p-q}p_n+\dfrac{f_1-pf_0}{q-p}q^n$。
 
 $\triangle$ 我们称 $x^2-ax-b=0$ 是二阶齐次线性递推数列 $f_n=af_{n-1}+b_{n-2}$ 的特征方程。其两根 $p,q$ 为这个数列的特征根。
 
-通过上面的通项公式我们可以发现 $f_n$ 为两个公比各为特征根的等比数列相加，因此不妨设 $f_n=\alpha p_n+\beta q_n$，代入 $\left\{\begin{aligned}\alpha+\beta&=f_0\\\\\alpha p+\beta q&=f_1\end{aligned}\right.$ 同样可以解出两个系数。
+通过上面的通项公式我们可以发现 $f_n$ 为两个公比各为特征根的等比数列相加，因此不妨设 $f_n=\alpha p_n+\beta q_n$，代入 $\begin{cases}\alpha+\beta=f_0\\\\\alpha p+\beta q=f_1\end{cases}$ 同样可以解出两个系数。
 
 $\triangle$ 结论：对于一个二阶齐次常系数递推数列 $f_n=af_{n-1}+bf_{n-2}$，其通项公式为特征根为公比的两个等比数列相加。
 
@@ -1023,9 +1023,9 @@ $\triangle$ 结论：对于一个二阶齐次常系数递推数列 $f_n=af_{n-1}
 
 $$f_n=d_1x_1^n+d_2x_2^n+\dots+d_kx_k^n$$
 
-那么是不是这个数列有无穷多种通项公式呢？显然不是的，因为我们还没有用上前 $k$ 个给定的值。我们解出 $\left\{\begin{aligned}d_1x_1^i+d_2x_2^i+\dots+d_kx_k^i=f_i\end{aligned}\right.$ 就能解出 $d_{1\sim k}$。
+那么是不是这个数列有无穷多种通项公式呢？显然不是的，因为我们还没有用上前 $k$ 个给定的值。我们解出 $\begin{cases}d_1x_1^i+d_2x_2^i+\dots+d_kx_k^i=f_i\end{cases}$ 就能解出 $d_{1\sim k}$。
 
-当然，从生成函数的角度我们有 $F=C*F+R$，其中 $R$ 是我们残存的一些余项，有 $R[i]=f_i-\sum\limits_{j=0}^{i-1} f_j \times c_{i-j}$，即 $R=C-F*C\pmod {x^k}$。它们可以快速算出。然后移一下项得到 $F=\dfrac{R}{1-C}$。多项式求逆即可。
+当然，从生成函数的角度我们有 $F=C\*F+R$，其中 $R$ 是我们残存的一些余项，有 $R[i]=f_i-\sum\limits_{j=0}^{i-1} f_j \times c_{i-j}$，即 $R=C-F\*C\pmod {x^k}$。它们可以快速算出。然后移一下项得到 $F=\dfrac{R}{1-C}$。多项式求逆即可。
 
 ## Prufer 序列
 

@@ -50,7 +50,7 @@ $\hat \theta (x_1, x_2, \cdots, x_n)$ 是最大似然估计值，$\hat \theta (X
 
 ## 7.3.3 相合性
 
-**相合估计量**：对于 $\theta$ 的估计量 $\hat \theta$，若 $\displaystyle \forall \epsilon > 0,\ P\{|\hat\theta - \theta| < \epsilon\} = 1$，即 $\hat\theta \xrightarrow{P} \theta$，则称 $\hat \theta$ 是 $\theta$ 的相合估计量。
+**相合估计量**：对于 $\theta$ 的估计量 $\hat \theta$，若 $\displaystyle \forall \epsilon > 0,\ P\\\{|\hat\theta - \theta| < \epsilon\\\} = 1$，即 $\hat\theta \xrightarrow{P} \theta$，则称 $\hat \theta$ 是 $\theta$ 的相合估计量。
 
 *矩估计法与最大似然估计法一般都具有相合性。*
 
@@ -58,7 +58,7 @@ $\hat \theta (x_1, x_2, \cdots, x_n)$ 是最大似然估计值，$\hat \theta (X
 
 # 7.4 区间估计
 
-**区间估计**：对于 $X$ 的分布函数 $F(x; \theta)$，给定 $\alpha\ (0 < \alpha < 1)$，如果有两个统计量 $\underline{\theta}(X_1, \cdots, X_n),\ \overline{\theta}(X_1, \cdots, X_n)$ 使得 $$P\{\underline{\theta}(X_1, \cdots, X_n) < \theta < \overline{\theta}(X_1, \cdots, X_n)\} = 1 - \alpha$$ 其中  $(\underline \theta, \overline \theta)$ 为 $\theta$ 的双侧 $1 - \alpha$ 置信区间（双侧置信下限到双侧置信上限）.
+**区间估计**：对于 $X$ 的分布函数 $F(x; \theta)$，给定 $\alpha\ (0 < \alpha < 1)$，如果有两个统计量 $\underline{\theta}(X_1, \cdots, X_n),\ \overline{\theta}(X_1, \cdots, X_n)$ 使得 $$P\\\{\underline{\theta}(X_1, \cdots, X_n) < \theta < \overline{\theta}(X_1, \cdots, X_n)\\\} = 1 - \alpha$$ 其中  $(\underline \theta, \overline \theta)$ 为 $\theta$ 的双侧 $1 - \alpha$ 置信区间（双侧置信下限到双侧置信上限）.
 
 **置信水平**：样本算出的置信区间包含带估计参数真实值 $\theta$ 的**概率**，这里为 $1 - \alpha$.
 
@@ -71,7 +71,7 @@ $\hat \theta (x_1, x_2, \cdots, x_n)$ 是最大似然估计值，$\hat \theta (X
 **求置信区间的一般步骤**：
 1. 寻找参数 $\theta$ 的良好的点估计 $T(X_1, X_2, \cdots, X_n)$（无偏、有效、相合）
 2. 寻找待估参数 $\theta$ 与估计量 $T$ 的已知分布的函数 $W(T, \theta)$，称为**枢轴量**。
-3. 根据 $W(T, \theta)$ 的分布，确定 $(a,b)$ 使得 $P\{a < W < b\} = 1 - \alpha$
+3. 根据 $W(T, \theta)$ 的分布，确定 $(a,b)$ 使得 $P\\\{a < W < b\\\} = 1 - \alpha$
 4. 等价变形 $a < W < b$ 得到 $\underline{\theta} < \theta < \overline{\theta}$.
 
 **正态总体均值、方差的置信区间（置信度 $1-\alpha$）：**

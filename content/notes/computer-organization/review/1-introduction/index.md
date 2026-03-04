@@ -141,7 +141,7 @@ $$\bigstar \mathbf{IMPORTANT}\bigstar$$
 - $$CPU时钟周期 (s) = \frac{1}{主频 (Hz)}$$
 
 $$\bigstar \mathbf{IMPORTANT}\bigstar$$
-#重点
+
 - CPI (Clock cycle per Instruction)，执行一条指令所需的 *平均* 时钟周期数。
   CPI 和时钟频率无关，和指令集、系统机构、计算机组织等实现方式有关。
   如果两台计算机的 "体系结构" 完全相同，那么它们的 CPI 相等。
